@@ -244,10 +244,10 @@ K=5
 
 # Trying the defaults first.
 clf = KNeighborsClassifier(n_neighbors=K)
+# KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+#            metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+#            weights='uniform')
 clf.fit(X_train, y_train)
-KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
-           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
-           weights='uniform')
 
 # Let’s run the classifier now and evaluate the results.
 y_test_pred = clf.predict(X_test)
